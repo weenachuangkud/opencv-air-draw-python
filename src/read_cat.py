@@ -15,4 +15,7 @@ cv.imshow('Canny Edges', canny)
 dilated = cv.dilate(canny, (7,7), iterations=3)
 cv.imshow('Dilated', dilated)
 
+resized = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
+cv.imshow('Resized', resized)
+
 cv.waitKey(0)
